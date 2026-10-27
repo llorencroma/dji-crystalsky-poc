@@ -3,14 +3,13 @@
 Proof-of-concept code for five vulnerabilities in the DJI CrystalSky ZS600C
 (Rockchip RK3288, Android 5.1.1), disclosed 2026-10.
 
-| CVE | Issue | CVSS | 
-|---|---|---|
-| [CVE-2026-114353](cves/CVE-2026-114353/) | Hard-coded token on the USB serial port gives a root shell (`assistant`) | 7 |
-| [CVE-2026-114354](cves/CVE-2026-114354/) | Binder transaction 1018 of `android.dji.server` runs commands as root | 8.6 | 
-| [CVE-2026-114355](cves/CVE-2026-114355/) | Command injection via logcat in the root script `hardware_monitor.sh` | 8.4 | 
-| [CVE-2026-114356](cves/CVE-2026-114356/) | `DJIUpdateService` (uid system) accepts transactions from any app | 7.7 | 
-| [CVE-2026-114357](cves/CVE-2026-114357/) | adb enabled over USB with authentication disabled | 6.8 |
-
+| CVE | Issue | CVSS | Advisory |
+|---|---|---|---|
+| [CVE-2026-114353](cves/CVE-2026-114353/) | Hard-coded token on the USB serial port gives a root shell (`assistant`) | 7 | [cve.org](https://www.cve.org/CVERecord?id=CVE-2026-114353) |
+| [CVE-2026-114354](cves/CVE-2026-114354/) | Binder transaction 1018 of `android.dji.server` runs commands as root | 8.6 | [cve.org](https://www.cve.org/CVERecord?id=CVE-2026-114354) |
+| [CVE-2026-114355](cves/CVE-2026-114355/) | Command injection via logcat in the root script `hardware_monitor.sh` | 8.6 | [cve.org](https://www.cve.org/CVERecord?id=CVE-2026-114355) |
+| [CVE-2026-114356](cves/CVE-2026-114356/) | `DJIUpdateService` (uid system) accepts transactions from any app | 7 | [cve.org](https://www.cve.org/CVERecord?id=CVE-2026-114356) |
+| [CVE-2026-114357](cves/CVE-2026-114357/) | adb enabled over USB with authentication disabled | 6.8 | [cve.org](https://www.cve.org/CVERecord?id=CVE-2026-114357) |
 ## Attack paths
 ```mermaid
 flowchart LR
