@@ -1,0 +1,5 @@
+__pycache__/
+build/
+*.keystore
+*.idsig
+.DS_Store
